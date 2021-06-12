@@ -1,32 +1,33 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div id="nav" class="py-3">
+      <a class="text-decoration-none px-3" href="/play">🎮</a>
+      <router-link to="/leaderboard" class="text-decoration-none">🏆</router-link>
     </div>
     <router-view/>
   </div>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
 
-#nav {
-  padding: 30px;
-}
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+export default {
+  data() {
+    return {
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+    }
+  },  
+ 
+}
+</script>
+
+<style scoped>
+#app{
+  min-height: 100vh;
+  background:#1d1d1d;
+}
+#nav{
+  background: #424040;
+  border-bottom: 1px solid white;
 }
 </style>
